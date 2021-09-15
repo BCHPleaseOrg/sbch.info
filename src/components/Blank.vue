@@ -1,6 +1,6 @@
 <template>
     <main>
-        <h1 class="text-5xl font-extrabold">smartBCH Blockchain Explorer</h1>
+        <h1>Blank Component</h1>
     </main>
 </template>
 
