@@ -25,6 +25,10 @@
                 </div>
                 <div class="hidden md:flex-1 md:flex md:items-center md:justify-between">
                     <nav class="flex space-x-10">
+                        <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                            Home
+                        </a>
+
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                             <button
@@ -213,12 +217,15 @@
                                 </div>
                             </div>
                         </div>
+
                         <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                            Pricing
+                            Blockchain
                         </a>
+
                         <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                            Docs
+                            Tokens
                         </a>
+
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                             <button
@@ -444,11 +451,11 @@
                         </div>
                     </nav>
                     <div class="flex items-center md:ml-12">
-                        <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <a href="javascript://" class="hidden text-base font-medium text-gray-500 hover:text-gray-900">
                             Sign in
                         </a>
                         <a href="javascript://" class="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
-                            Sign up
+                            Connect
                         </a>
                     </div>
                 </div>
@@ -465,7 +472,8 @@
           From: "opacity-100 scale-100"
           To: "opacity-0 scale-95"
       -->
-        <div class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <!-- <div class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"> -->
+        <div class="hidden">
             <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                 <div class="pt-5 pb-6 px-5 sm:pb-8">
                     <div class="flex items-center justify-between">

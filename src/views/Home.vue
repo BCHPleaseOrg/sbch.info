@@ -1,6 +1,8 @@
 <template>
     <main>
-        <h1 class="text-5xl font-extrabold">smartBCH Blockchain Explorer</h1>
+        <section class="text-center p-7">
+            <h1 class="text-4xl font-extrabold">The smartBCH Blockchain Explorer</h1>
+        </section>
     </main>
 </template>
 
