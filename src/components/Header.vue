@@ -7,7 +7,7 @@
                 <div>
                     <a href="javascript://" class="flex">
                         <span class="sr-only">Workflow</span>
-                        <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="" />
+                        <img class="h-8 w-auto sm:h-10" :src="require('@/assets/logo.png')" alt="" />
                     </a>
                 </div>
                 <div class="-mr-2 -my-2 md:hidden">
@@ -32,6 +32,7 @@
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                             <button
+                                @click="toggleSolutions"
                                 type="button"
                                 class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 aria-expanded="false"
@@ -57,8 +58,7 @@
                     From: "opacity-100 translate-y-0"
                     To: "opacity-0 -translate-y-1"
                 -->
-                            <!-- <div class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg bg-white"> -->
-                            <div class="hidden">
+                            <div v-if="showMore" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg bg-white">
                                 <div class="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
                                     <a href="javascript://" class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                         <div class="flex md:h-full lg:flex-col">
@@ -229,6 +229,7 @@
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                             <button
+                                @click="toggleMore"
                                 type="button"
                                 class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 aria-expanded="false"
@@ -254,8 +255,7 @@
                     From: "opacity-100 translate-y-0"
                     To: "opacity-0 -translate-y-1"
                 -->
-                            <!-- <div class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg"> -->
-                            <div class="hidden">
+                            <div v-if="showSolutions" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg">
                                 <div class="absolute inset-0 flex">
                                     <div class="bg-white w-1/2"></div>
                                     <div class="bg-gray-50 w-1/2"></div>
@@ -472,8 +472,7 @@
           From: "opacity-100 scale-100"
           To: "opacity-0 scale-95"
       -->
-        <!-- <div class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"> -->
-        <div class="hidden">
+        <div class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
             <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                 <div class="pt-5 pb-6 px-5 sm:pb-8">
                     <div class="flex items-center justify-between">
@@ -614,12 +613,49 @@
 </template>
 
 <script>
-/* Import components. */
-// import Footer from '@/components/Footer'
+/* Import modules. */
+// import { ethers } from 'ethers'
+// import numeral from 'numeral'
 
 export default {
     components: {
-        // Footer,
-    }
+        // HelloWorld
+    },
+    data: () => {
+        return {
+            showMore: null,
+            showSolutions: null,
+        }
+    },
+    computed: {
+        //
+    },
+    methods: {
+        async init() {
+
+        },
+
+        toggleMore() {
+            this.showSolutions = false
+
+            this.showMore = !this.showMore
+        },
+
+        toggleSolutions() {
+            this.showMore = false
+
+            this.showSolutions = !this.showSolutions
+        },
+
+    },
+    created: function () {
+        this.showMore = false
+        this.showSolutions = false
+
+        this.init()
+    },
+    mounted: function () {
+        //
+    },
 }
 </script>
