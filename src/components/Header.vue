@@ -7,7 +7,7 @@
                 <div>
                     <a href="javascript://" class="flex">
                         <span class="sr-only">SmartBCH Info</span>
-                        <img class="h-8 w-auto sm:h-10" :src="require('@/assets/logo.png')" alt="" />
+                        <img class="h-8 w-auto sm:h-10" :src="require('@/assets/images/logo.png')" alt="" />
                     </a>
                 </div>
 
@@ -34,12 +34,12 @@
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                             <button
-                                @click="toggleSolutions"
+                                @click="toggleAssets"
                                 type="button"
                                 class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 aria-expanded="false"
                             >
-                                <span>Solutions</span>
+                                <span>Assets</span>
                                 <!--
                     Heroicon name: solid/chevron-down
 
@@ -51,7 +51,7 @@
                             </button>
 
                             <!--
-                  'Solutions' flyout menu, show/hide based on flyout menu state.
+                  'Assets' flyout menu, show/hide based on flyout menu state.
 
                   Entering: "transition ease-out duration-200"
                     From: "opacity-0 -translate-y-1"
@@ -248,8 +248,8 @@
                             Validators
                         </router-link>
 
-                        <router-link to="/tokens" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                            Tokens
+                        <router-link to="/xhedge" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                            XHedge
                         </router-link>
 
                         <div>
@@ -281,7 +281,7 @@
                     From: "opacity-100 translate-y-0"
                     To: "opacity-0 -translate-y-1"
                 -->
-                            <div v-if="showSolutions" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg">
+                            <div v-if="showAssets" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg">
                                 <div class="absolute inset-0 flex">
                                     <div class="bg-white w-1/2"></div>
                                     <div class="bg-gray-50 w-1/2"></div>
@@ -676,7 +676,7 @@ export default {
     data: () => {
         return {
             showMore: null,
-            showSolutions: null,
+            showAssets: null,
         }
     },
     computed: {
@@ -688,21 +688,21 @@ export default {
         },
 
         toggleMore() {
-            this.showSolutions = false
+            this.showAssets = false
 
             this.showMore = !this.showMore
         },
 
-        toggleSolutions() {
+        toggleAssets() {
             this.showMore = false
 
-            this.showSolutions = !this.showSolutions
+            this.showAssets = !this.showAssets
         },
 
     },
     created: function () {
         this.showMore = false
-        this.showSolutions = false
+        this.showAssets = false
 
         this.init()
     },
