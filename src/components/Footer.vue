@@ -198,7 +198,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base text-gray-500 hover:text-gray-900">
+                                    <a href="https://docs.smartbch.org/smartbch/" target="_blank" class="text-base text-gray-500 hover:text-gray-900">
                                         Knoweledge Base
                                     </a>
                                 </li>
