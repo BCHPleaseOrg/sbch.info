@@ -2,13 +2,14 @@
     <!-- This example requires Tailwind CSS v2.0+ -->
     <main class="bg-white" aria-labelledby="footer-heading">
         <h2 id="footer-heading" class="sr-only">Footer</h2>
+
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
             <div class="xl:grid xl:grid-cols-3 xl:gap-8">
                 <div class="space-y-8 xl:col-span-1">
                     <img class="h-10" :src="require('@/assets/images/logo.png')" alt="Company name" />
 
                     <p class="text-gray-500 text-base">
-                        sBCH.Info is an analytics tool that enables people to search the smartBCH blockchain for transactions, addresses, and other platform activities.
+                        <strong>Smart Bitcoin Info Center</strong> is an advanced toolkit that provides SBCH stakeholders with data on transactions, addresses, and many other on-chain resources.
                     </p>
 
                     <p class="text-gray-500 text-sm">
@@ -141,13 +142,13 @@
                     <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                                Company
+                                Our Info Center
                             </h3>
 
                             <ul role="list" class="mt-4 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-base text-gray-500 hover:text-gray-900">
-                                        About Us
+                                    <a href="https://docs.sbch.info" target="_blank" class="text-base text-gray-500 hover:text-gray-900">
+                                        Documenation
                                     </a>
                                 </li>
 
@@ -179,13 +180,26 @@
 
                         <div class="mt-12 md:mt-0">
                             <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                                Resources
+                                Important Links
                             </h3>
 
                             <ul role="list" class="mt-4 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-base text-gray-500 hover:text-gray-900">
-                                        API Documentation
+                                    <a href="https://smartbch.org/" target="_blank" class="text-base text-gray-500 hover:text-gray-900">
+                                        SmartBCH Homepage
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://read.cash/@SmartBCH" target="_blank" class="text-base text-gray-500 hover:text-gray-900">
+                                        SmartBCH Blog
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://smartscan.cash" target="_blank" class="text-base text-gray-500 hover:text-gray-900">
+                                        Smartscan
+                                        <small>(explorer)</small>
                                     </a>
                                 </li>
 

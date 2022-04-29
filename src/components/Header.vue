@@ -1,14 +1,14 @@
 <template>
-    <main class="relative bg-white">
+    <main class="relative bg-gray-700">
         <div class="absolute inset-0 shadow z-30 pointer-events-none" aria-hidden="true"></div>
 
         <div class="relative z-20">
             <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
                 <div>
-                    <a href="javascript://" class="flex">
+                    <router-link to="/" class="flex">
                         <span class="sr-only">SmartBCH Info</span>
                         <img class="h-8 w-auto sm:h-10" :src="require('@/assets/images/logo.png')" alt="" />
-                    </a>
+                    </router-link>
                 </div>
 
                 <div class="-mr-2 -my-2 md:hidden">
@@ -27,16 +27,16 @@
 
                 <div class="hidden md:flex-1 md:flex md:items-center md:justify-between">
                     <nav class="flex space-x-10">
-                        <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <router-link to="/" class="text-base font-medium text-gray-500 hover:text-gray-900">
                             Home
-                        </a>
+                        </router-link>
 
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                             <button
                                 @click="toggleAssets"
                                 type="button"
-                                class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="text-gray-500 group py-1 px-3 bg-gray-100 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 aria-expanded="false"
                             >
                                 <span>Assets</span>
@@ -60,7 +60,7 @@
                     From: "opacity-100 translate-y-0"
                     To: "opacity-0 -translate-y-1"
                 -->
-                            <div v-if="showMore" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg bg-white">
+                            <div v-if="showTools" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg bg-white">
                                 <div class="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
                                     <a href="javascript://" class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                         <div class="flex md:h-full lg:flex-col">
@@ -255,12 +255,12 @@
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                             <button
-                                @click="toggleMore"
+                                @click="toggleTools"
                                 type="button"
-                                class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="text-gray-500 group py-1 px-3 bg-gray-100 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 aria-expanded="false"
                             >
-                                <span>More</span>
+                                <span>Tools</span>
                                 <!--
                     Heroicon name: solid/chevron-down
 
@@ -497,7 +497,7 @@
                         </a>
 
                         <a href="javascript://" class="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
-                            Connect
+                            Connect Wallet
                         </a>
                     </div>
                 </div>
@@ -675,8 +675,8 @@ export default {
     },
     data: () => {
         return {
-            showMore: null,
             showAssets: null,
+            showTools: null,
         }
     },
     computed: {
@@ -687,21 +687,21 @@ export default {
 
         },
 
-        toggleMore() {
+        toggleTools() {
             this.showAssets = false
 
-            this.showMore = !this.showMore
+            this.showTools = !this.showTools
         },
 
         toggleAssets() {
-            this.showMore = false
+            this.showTools = false
 
             this.showAssets = !this.showAssets
         },
 
     },
     created: function () {
-        this.showMore = false
+        this.showTools = false
         this.showAssets = false
 
         this.init()

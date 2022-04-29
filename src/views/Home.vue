@@ -1,13 +1,23 @@
 <template>
-    <main>
+    <main class="max-w-7xl mx-auto">
+        <Stats />
+
         <section class="text-center p-7">
-            <h1 class="text-4xl font-extrabold">The smartBCH Blockchain Explorer</h1>
+            <h1 class="hidden text-5xl font-extrabold">
+                Smart Bitcoin Info Center
+            </h1>
 
-            <h3 v-if="blockNum" class="text-3xl font-medium text-pink-500">Block height is {{blockNumDisplay}}</h3>
+            <div v-if="blockNum" class="w-2/5 mx-auto mt-5 flex justify-center py-3 px-7 bg-purple-200 text-3xl font-medium text-pink-500 border-4 border-purple-500 rounded-xl">
+                Block height is {{blockNumDisplay}}
+            </div>
 
-            <h3 v-if="lastBlockTime" class="text-3xl font-medium text-pink-500">Last block was {{lastBlockDisplay}}</h3>
+            <div v-if="lastBlockTime" class="w-2/5 mx-auto mt-5 flex justify-center py-3 px-7 bg-purple-200 text-3xl font-medium text-pink-500 border-4 border-purple-500 rounded-xl">
+                Last block was {{lastBlockDisplay}}
+            </div>
         </section>
     </main>
+
+    <Details class="hidden" />
 </template>
 
 <script>
@@ -16,9 +26,14 @@ import { ethers } from 'ethers'
 import moment from 'moment'
 import numeral from 'numeral'
 
+/* Import components. */
+import Details from '@/components/Details'
+import Stats from '@/components/Stats'
+
 export default {
     components: {
-        // HelloWorld
+        Details,
+        Stats,
     },
     data: () => {
         return {
@@ -58,10 +73,11 @@ export default {
     },
     methods: {
         async init() {
-            console.log('Initializing Nito Surf...')
+            console.log('Initializing SmartBCH Info...')
 
             const rpcParams = {
-                url: 'https://smartbch.devops.cash/mainnet',
+                // url: 'https://smartbch.devops.cash/mainnet',
+                url: 'https://smartbch.fountainhead.cash/mainnet',
             }
 
             const network = {

@@ -5,11 +5,11 @@
             <div class="pr-16 sm:text-center sm:px-16">
                 <p class="font-medium text-white">
                     <span class="md:hidden">
-                        We announced a new product!
+                        Introducing sBCH Info!
                     </span>
 
                     <span class="hidden md:inline">
-                        Big news! We're excited to announce a brand new product.
+                        Introducing Smart Bitcoin Info Center!
                     </span>
 
                     <span class="block sm:ml-2 sm:inline-block">
