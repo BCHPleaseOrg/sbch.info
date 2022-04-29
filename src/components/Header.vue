@@ -61,12 +61,13 @@
                     From: "opacity-100 translate-y-0"
                     To: "opacity-0 -translate-y-1"
                 -->
-                            <div v-if="showTools" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg bg-gray-200">
-                                <div class="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 bg-yellow-100 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
-                                    <a href="javascript://" class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
+                            <div v-if="showResources" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg bg-gray-200">
+                                <div class="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 bg-yellow-100 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-8 xl:py-12">
+
+                                    <a @click="openSearch" href="javascript://" class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-yellow-200">
                                         <div class="flex md:h-full lg:flex-col">
                                             <div class="flex-shrink-0">
-                                                <span class="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                                                <span class="inline-flex items-center justify-center h-10 w-10 rounded-md bg-yellow-500 text-white sm:h-12 sm:w-12">
                                                     <!-- Heroicon name: outline/chart-bar -->
                                                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                                         <path
@@ -82,25 +83,25 @@
                                             <div class="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                                 <div>
                                                     <p class="text-base font-medium text-gray-900">
-                                                        Analytics
+                                                        Contract Search
                                                     </p>
 
-                                                    <p class="mt-1 text-sm text-gray-500">
-                                                        Get a better understanding of where your traffic is coming from.
+                                                    <p class="mt-1 text-base text-gray-500">
+                                                        Search for smart contract source codes using keywords, addresses, tx date, block number, and more..
                                                     </p>
                                                 </div>
 
-                                                <p class="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
-                                                    Learn more <span aria-hidden="true">&rarr;</span>
+                                                <p class="mt-2 text-base font-medium text-indigo-600 lg:mt-4">
+                                                    Open the search <span aria-hidden="true">&rarr;</span>
                                                 </p>
                                             </div>
                                         </div>
                                     </a>
 
-                                    <a href="javascript://" class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
+                                    <a @click="openVerify" href="javascript://" class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-yellow-200">
                                         <div class="flex md:h-full lg:flex-col">
                                             <div class="flex-shrink-0">
-                                                <span class="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                                                <span class="inline-flex items-center justify-center h-10 w-10 rounded-md bg-yellow-500 text-white sm:h-12 sm:w-12">
                                                     <!-- Heroicon name: outline/cursor-click -->
                                                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                                         <path
@@ -116,25 +117,26 @@
                                             <div class="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                                 <div>
                                                     <p class="text-base font-medium text-gray-900">
-                                                        Engagement
+                                                        Verify Contract
                                                     </p>
 
-                                                    <p class="mt-1 text-sm text-gray-500">
-                                                        Speak directly to your customers in a more meaningful way.
+                                                    <p class="mt-1 text-base text-gray-500">
+                                                        <strong class="text-red-500">Don't trust, Verify!</strong>
+                                                        Do your own due dilegence before trusting your Bitcoin to ANY smart contract.
                                                     </p>
                                                 </div>
 
-                                                <p class="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
-                                                    Learn more <span aria-hidden="true">&rarr;</span>
+                                                <p class="mt-2 text-base font-medium text-indigo-600 lg:mt-4">
+                                                    Open the verifier <span aria-hidden="true">&rarr;</span>
                                                 </p>
                                             </div>
                                         </div>
                                     </a>
 
-                                    <a href="javascript://" class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
+                                    <a href="https://docs.sbch.info" target="_blank" class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-yellow-200">
                                         <div class="flex md:h-full lg:flex-col">
                                             <div class="flex-shrink-0">
-                                                <span class="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                                                <span class="inline-flex items-center justify-center h-10 w-10 rounded-md bg-yellow-500 text-white sm:h-12 sm:w-12">
                                                     <!-- Heroicon name: outline/shield-check -->
                                                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                                         <path
@@ -150,25 +152,25 @@
                                             <div class="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                                 <div>
                                                     <p class="text-base font-medium text-gray-900">
-                                                        Security
+                                                        Best Practices
                                                     </p>
 
-                                                    <p class="mt-1 text-sm text-gray-500">
-                                                        Your customers&#039; data will be safe and secure.
+                                                    <p class="mt-1 text-base text-gray-500">
+                                                        Crypto doesn't have to be hard, but it's important to know and understand the basics.
                                                     </p>
                                                 </div>
 
-                                                <p class="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
-                                                    Learn more <span aria-hidden="true">&rarr;</span>
+                                                <p class="mt-2 text-base font-medium text-indigo-600 lg:mt-4">
+                                                    Open the docs <span aria-hidden="true">&rarr;</span>
                                                 </p>
                                             </div>
                                         </div>
                                     </a>
 
-                                    <a href="javascript://" class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
+                                    <a href="https://docs.sbch.info" target="_blank" class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-yellow-200">
                                         <div class="flex md:h-full lg:flex-col">
                                             <div class="flex-shrink-0">
-                                                <span class="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                                                <span class="inline-flex items-center justify-center h-10 w-10 rounded-md bg-yellow-500 text-white sm:h-12 sm:w-12">
                                                     <!-- Heroicon name: outline/view-grid -->
                                                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                                         <path
@@ -184,18 +186,19 @@
                                             <div class="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                                 <div>
                                                     <p class="text-base font-medium text-gray-900">
-                                                        Integrations
+                                                        For BUIDLers
                                                     </p>
 
-                                                    <p class="mt-1 text-sm text-gray-500">
-                                                        Connect with third-party tools that you&#039;re already using.
+                                                    <p class="mt-1 text-base text-gray-500">
+                                                        Complete documenation and guides for developers looking to BUIDL on top of SmartBCH.
                                                     </p>
                                                 </div>
 
-                                                <p class="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
-                                                    Learn more <span aria-hidden="true">&rarr;</span>
+                                                <p class="mt-2 text-base font-medium text-indigo-600 lg:mt-4">
+                                                    Open the docs <span aria-hidden="true">&rarr;</span>
                                                 </p>
                                             </div>
+
                                         </div>
                                     </a>
                                 </div>
@@ -204,40 +207,25 @@
                                     <div class="max-w-7xl mx-auto space-y-6 px-4 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
                                         <div class="flow-root">
                                             <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100">
-                                                <!-- Heroicon name: outline/play -->
-                                                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                </svg>
+                                                <svg class="flex-shrink-0 h-6 w-6 text-yellow-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
 
-                                                <span class="ml-3">Watch Demo</span>
+                                                <span class="ml-3">Charts &amp; Stats</span>
                                             </a>
                                         </div>
 
                                         <div class="flow-root">
                                             <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100">
-                                                <!-- Heroicon name: outline/check-circle -->
-                                                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                </svg>
+                                                <svg class="flex-shrink-0 h-6 w-6 text-yellow-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
 
-                                                <span class="ml-3">View All Products</span>
+                                                <span class="ml-3">Verified Contracts</span>
                                             </a>
                                         </div>
 
                                         <div class="flow-root">
                                             <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100">
-                                                <!-- Heroicon name: outline/phone -->
-                                                <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                                    <path
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                                                    />
-                                                </svg>
+                                                <svg class="flex-shrink-0 h-6 w-6 text-yellow-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-3 3a1 1 0 100 2h.01a1 1 0 100-2H10zm-4 1a1 1 0 011-1h.01a1 1 0 110 2H7a1 1 0 01-1-1zm1-4a1 1 0 100 2h.01a1 1 0 100-2H7zm2 1a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm4-4a1 1 0 100 2h.01a1 1 0 100-2H13zM9 9a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zM7 8a1 1 0 000 2h.01a1 1 0 000-2H7z" clip-rule="evenodd"></path></svg>
 
-                                                <span class="ml-3">Contact Sales</span>
+                                                <span class="ml-3">Calculator</span>
                                             </a>
                                         </div>
                                     </div>
@@ -256,12 +244,12 @@
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                             <button
-                                @click="toggleTools"
+                                @click="toggleResources"
                                 type="button"
                                 class="text-gray-500 group py-1 px-3 bg-gray-100 rounded-md inline-flex items-center text-xl font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 aria-expanded="false"
                             >
-                                <span>Tools</span>
+                                <span>Resources</span>
                                 <!--
                     Heroicon name: solid/chevron-down
 
@@ -664,7 +652,7 @@ export default {
     data: () => {
         return {
             showAssets: null,
-            showTools: null,
+            showResources: null,
             showMobileMenu: null,
 
             posts: null,
@@ -700,34 +688,46 @@ export default {
 
         toggleAssets() {
             this.showMobileMenu = false
-            this.showTools = false
+            this.showResources = false
 
             this.showAssets = !this.showAssets
         },
 
         toggleMobileMenu() {
             this.showAssets = false
-            this.showTools = false
+            this.showResources = false
 
             this.showMobileMenu = !this.showMobileMenu
         },
 
-        toggleTools() {
+        toggleResources() {
             this.showAssets = false
             this.showMobileMenu = false
 
-            this.showTools = !this.showTools
+            this.showResources = !this.showResources
         },
 
         timeAgo(_dataPosted) {
             return moment.unix(_dataPosted).fromNow()
         },
 
+        openSearch() {
+            this.showResources = false
+
+            this.$router.push('/search')
+        },
+
+        openVerify() {
+            this.showResources = false
+
+            this.$router.push('/verify')
+        },
+
     },
     created: function () {
         this.showAssets = false
         this.showMobileMenu = false
-        this.showTools = false
+        this.showResources = false
 
         this.posts = []
 
