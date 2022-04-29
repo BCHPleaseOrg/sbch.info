@@ -1,6 +1,6 @@
 <template>
     <Banner />
-    
+
     <Header />
 
     <router-view />
@@ -22,3 +22,23 @@ export default {
     }
 }
 </script>
+
+<style>
+.two-lines {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+}
+
+.three-lines {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3;
+   -webkit-box-orient: vertical;
+}
+</style>

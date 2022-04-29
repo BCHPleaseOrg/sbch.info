@@ -433,58 +433,43 @@
 
                                     <div class="bg-yellow-200 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                                         <div>
-                                            <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
-                                                From the blog
+                                            <h3 class="text-lg font-medium tracking-wide text-yellow-700 uppercase">
+                                                From the SmartBCH blog
                                             </h3>
 
                                             <ul role="list" class="mt-6 space-y-6">
-                                                <li class="flow-root">
-                                                    <a href="javascript://" class="-m-3 p-3 flex rounded-lg hover:bg-gray-100">
+
+                                                <li v-for="post of posts" :key="post.id" class="flow-root">
+                                                    <a :href="post.url" target="_blank" class="-m-3 p-3 flex rounded-lg hover:bg-yellow-100">
                                                         <div class="hidden sm:block flex-shrink-0">
                                                             <img
-                                                                class="w-32 h-20 object-cover rounded-md"
-                                                                src="https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80"
+                                                                class="w-32 h-20 object-cover rounded-md shadow-lg"
+                                                                :src="post.banner"
                                                                 alt=""
                                                             />
                                                         </div>
 
                                                         <div class="w-0 flex-1 sm:ml-8">
                                                             <h4 class="text-base font-medium text-gray-900 truncate">
-                                                                Boost your conversion rate
+                                                                {{post.title}}
                                                             </h4>
-                                                            <p class="mt-1 text-sm text-gray-500">
-                                                                Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.
+                                                            <p class="two-lines mt-1 text-sm text-gray-800">
+                                                                {{post.summary}}
                                                             </p>
+                                                            <small>
+                                                                {{timeAgo(post.datePosted)}}
+                                                            </small>
                                                         </div>
                                                     </a>
                                                 </li>
 
-                                                <li class="flow-root">
-                                                    <a href="javascript://" class="-m-3 p-3 flex rounded-lg hover:bg-gray-100">
-                                                        <div class="hidden sm:block flex-shrink-0">
-                                                            <img
-                                                                class="w-32 h-20 object-cover rounded-md"
-                                                                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2300&q=80"
-                                                                alt=""
-                                                            />
-                                                        </div>
-
-                                                        <div class="w-0 flex-1 sm:ml-8">
-                                                            <h4 class="text-base font-medium text-gray-900 truncate">
-                                                                How to use search engine optimization to drive traffic to your site
-                                                            </h4>
-
-                                                            <p class="mt-1 text-sm text-gray-500">
-                                                                Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.
-                                                            </p>
-                                                        </div>
-                                                    </a>
-                                                </li>
                                             </ul>
                                         </div>
 
                                         <div class="mt-6 text-sm font-medium">
-                                            <a href="javascript://" class="text-indigo-600 hover:text-indigo-500"> View all posts <span aria-hidden="true">&rarr;</span></a>
+                                            <a href="https://read.cash/@SmartBCH" target="_blank" class="text-lg text-indigo-600 hover:text-indigo-500">
+                                                View all posts <span aria-hidden="true">&rarr;</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -670,8 +655,7 @@
 
 <script>
 /* Import modules. */
-// import { ethers } from 'ethers'
-// import numeral from 'numeral'
+import moment from 'moment'
 
 export default {
     components: {
@@ -682,6 +666,8 @@ export default {
             showAssets: null,
             showTools: null,
             showMobileMenu: null,
+
+            posts: null,
         }
     },
     computed: {
@@ -690,6 +676,26 @@ export default {
     methods: {
         async init() {
 
+        },
+
+        addPosts() {
+            this.posts.push({
+                id: 'f3d418e5-21bc-48dc-8033-c645121f9f9d',
+                title: `Light-weighted Manipulation-proof Random Number Generator for smartBCH`,
+                summary: `In our early article introducing cloud enclaves, a mechanism for building manipulation-proof random number generators (RNG) with SGX enclaves was presented. Now we are planning to implement`,
+                banner: 'https://i.imgur.com/H57xVPB.png',
+                url: 'https://read.cash/@SmartBCH/light-weighted-manipulation-proof-random-number-generator-for-smartbch-79ac7d36',
+                datePosted: 1651064984,
+            })
+
+            this.posts.push({
+                id: 'c4043169-c524-4953-8849-c4c72f1841d5',
+                title: `Let's get rid of transactions for approving/revoking tokens`,
+                summary: `Even as a DEFI beginner, you may already find SEP20 token's approving transactions are annoying: if you want to add liquidity to the CATS/FLEXUSD pool, you must send one transaction for`,
+                banner: 'https://i.imgur.com/H57xVPB.png',
+                url: 'https://read.cash/@SmartBCH/lets-get-rid-of-transactions-for-approvingrevoking-tokens-c34c9330',
+                datePosted: 1650958896,
+            })
         },
 
         toggleAssets() {
@@ -713,13 +719,21 @@ export default {
             this.showTools = !this.showTools
         },
 
+        timeAgo(_dataPosted) {
+            return moment.unix(_dataPosted).fromNow()
+        },
+
     },
     created: function () {
         this.showAssets = false
         this.showMobileMenu = false
         this.showTools = false
 
+        this.posts = []
+
         this.init()
+
+        this.addPosts()
     },
     mounted: function () {
         //
