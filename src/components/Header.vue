@@ -7,12 +7,13 @@
                 <div>
                     <router-link to="/" class="flex">
                         <span class="sr-only">SmartBCH Info</span>
-                        <img class="h-8 w-auto sm:h-10" :src="require('@/assets/images/logo.png')" alt="" />
+                        <img class="h-12 w-auto sm:h-16" :src="require('@/assets/images/logo.png')" alt="" />
                     </router-link>
                 </div>
 
                 <div class="-mr-2 -my-2 md:hidden">
                     <button
+                        @click="toggleMobileMenu"
                         type="button"
                         class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                         aria-expanded="false"
@@ -26,8 +27,8 @@
                 </div>
 
                 <div class="hidden md:flex-1 md:flex md:items-center md:justify-between">
-                    <nav class="flex space-x-10">
-                        <router-link to="/" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                    <nav class="flex space-x-10 items-center">
+                        <router-link to="/" class="text-xl font-medium text-gray-100 hover:text-gray-300">
                             Home
                         </router-link>
 
@@ -36,7 +37,7 @@
                             <button
                                 @click="toggleAssets"
                                 type="button"
-                                class="text-gray-500 group py-1 px-3 bg-gray-100 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="text-gray-500 group py-1 px-3 bg-gray-100 rounded-md inline-flex items-center text-xl font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 aria-expanded="false"
                             >
                                 <span>Assets</span>
@@ -60,8 +61,8 @@
                     From: "opacity-100 translate-y-0"
                     To: "opacity-0 -translate-y-1"
                 -->
-                            <div v-if="showTools" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg bg-white">
-                                <div class="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
+                            <div v-if="showTools" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg bg-gray-200">
+                                <div class="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 bg-yellow-100 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
                                     <a href="javascript://" class="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                         <div class="flex md:h-full lg:flex-col">
                                             <div class="flex-shrink-0">
@@ -199,7 +200,7 @@
                                     </a>
                                 </div>
 
-                                <div class="bg-gray-50">
+                                <div class="bg-yellow-400">
                                     <div class="max-w-7xl mx-auto space-y-6 px-4 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
                                         <div class="flow-root">
                                             <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100">
@@ -244,11 +245,11 @@
                             </div>
                         </div>
 
-                        <router-link to="/validators" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <router-link to="/validators" class="text-xl font-medium text-gray-100 hover:text-gray-300">
                             Validators
                         </router-link>
 
-                        <router-link to="/xhedge" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <router-link to="/xhedge" class="text-xl font-medium text-gray-100 hover:text-gray-300">
                             XHedge
                         </router-link>
 
@@ -257,7 +258,7 @@
                             <button
                                 @click="toggleTools"
                                 type="button"
-                                class="text-gray-500 group py-1 px-3 bg-gray-100 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                class="text-gray-500 group py-1 px-3 bg-gray-100 rounded-md inline-flex items-center text-xl font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 aria-expanded="false"
                             >
                                 <span>Tools</span>
@@ -283,12 +284,12 @@
                 -->
                             <div v-if="showAssets" class="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg">
                                 <div class="absolute inset-0 flex">
-                                    <div class="bg-white w-1/2"></div>
-                                    <div class="bg-gray-50 w-1/2"></div>
+                                    <div class="bg-yellow-100 w-1/2"></div>
+                                    <div class="bg-yellow-200 w-1/2"></div>
                                 </div>
 
                                 <div class="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
-                                    <nav class="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
+                                    <nav class="grid gap-y-10 px-4 py-8 bg-yellow-100 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                                         <div>
                                             <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
                                                 Company
@@ -430,7 +431,7 @@
                                         </div>
                                     </nav>
 
-                                    <div class="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
+                                    <div class="bg-yellow-200 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                                         <div>
                                             <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
                                                 From the blog
@@ -463,7 +464,7 @@
                                                         <div class="hidden sm:block flex-shrink-0">
                                                             <img
                                                                 class="w-32 h-20 object-cover rounded-md"
-                                                                src="https://images.unsplash.com/1/apple-gear-looking-pretty.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+                                                                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2300&q=80"
                                                                 alt=""
                                                             />
                                                         </div>
@@ -514,16 +515,17 @@
           From: "opacity-100 scale-100"
           To: "opacity-0 scale-95"
       -->
-        <div class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+        <div v-if="showMobileMenu" class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-gray-100 divide-y-2 divide-gray-50">
                 <div class="pt-5 pb-6 px-5 sm:pb-8">
                     <div class="flex items-center justify-between">
                         <div>
-                            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow" />
+                            <img class="h-12 w-auto" :src="require('@/assets/images/logo.png')" alt="Workflow" />
                         </div>
 
                         <div class="-mr-2">
                             <button
+                                @click="toggleMobileMenu"
                                 type="button"
                                 class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                             >
@@ -649,15 +651,17 @@
 
                     <div class="mt-6">
                         <a href="javascript://" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
-                            Sign up
+                            Connect Wallet
                         </a>
-                        <p class="mt-6 text-center text-base font-medium text-gray-500">
+
+                        <p class="hidden mt-6 text-center text-base font-medium text-gray-500">
                             Existing customer?
                             <a href="javascript://" class="text-indigo-600 hover:text-indigo-500">
                                 Sign in
                             </a>
                         </p>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -677,6 +681,7 @@ export default {
         return {
             showAssets: null,
             showTools: null,
+            showMobileMenu: null,
         }
     },
     computed: {
@@ -687,22 +692,32 @@ export default {
 
         },
 
-        toggleTools() {
-            this.showAssets = false
-
-            this.showTools = !this.showTools
-        },
-
         toggleAssets() {
+            this.showMobileMenu = false
             this.showTools = false
 
             this.showAssets = !this.showAssets
         },
 
+        toggleMobileMenu() {
+            this.showAssets = false
+            this.showTools = false
+
+            this.showMobileMenu = !this.showMobileMenu
+        },
+
+        toggleTools() {
+            this.showAssets = false
+            this.showMobileMenu = false
+
+            this.showTools = !this.showTools
+        },
+
     },
     created: function () {
-        this.showTools = false
         this.showAssets = false
+        this.showMobileMenu = false
+        this.showTools = false
 
         this.init()
     },

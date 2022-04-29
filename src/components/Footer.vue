@@ -9,7 +9,7 @@
                     <img class="h-10" :src="require('@/assets/images/logo.png')" alt="Company name" />
 
                     <p class="text-gray-500 text-base">
-                        <strong>Smart Bitcoin Info Center</strong> is an advanced toolkit that provides SBCH stakeholders with data on transactions, addresses, and many other on-chain resources.
+                        <strong>Smart Bitcoin Info Center</strong> is a FREE portal providing SBCH stakeholders with the tools and resources they need to work smarter not harder.
                     </p>
 
                     <p class="text-gray-500 text-sm">
@@ -159,14 +159,8 @@
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base text-gray-500 hover:text-gray-900">
-                                        Brand Assets
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="javascript://" class="text-base text-gray-500 hover:text-gray-900">
-                                        Careers
+                                    <a href="https://gitlab.com/bchplease/sbch-info" target="_blank" class="text-base text-gray-500 hover:text-gray-900">
+                                        Source Code
                                     </a>
                                 </li>
 
