@@ -1,0 +1,32 @@
+[
+    {
+        "address": "0x7b2B3C5308ab5b2a1d9a94d20D35CCDf61e05b72",
+        "abiNames": [
+            "sep20"
+        ],
+        "type": "sep20",
+        "name": "FlexUSD (proxy contract)",
+        "logo": true
+    },
+    {
+        "address": "0x7b2B3C5308ab5b2a1d9a94d20D35CCDf61e05b72",
+        "abiName": "sep20",
+        "type": "flexusd",
+        "name": "FlexUSDImplV2 (logic contract)",
+        "logo": true
+    },
+    {
+        "address": "0x6732E55Ac3ECa734F54C26Bd8DF4eED52Fb79a6E",
+        "abiName": "sep20",
+        "type": "sep20",
+        "name": "Joystick",
+        "logo": true
+    },
+    {
+        "address": "0x3743eC0673453E5009310C727Ba4eaF7b3a1cc04",
+        "abiName": "weth",
+        "type": "sep20",
+        "name": "Wrapped BCH",
+        "logo": true
+    }
+]
