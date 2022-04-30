@@ -1,6 +1,7 @@
 /* Import modules. */
 const colors = require('tailwindcss/colors')
 
+
 module.exports = {
     purge: [],
     darkMode: false, // or 'media' or 'class'
@@ -18,6 +19,8 @@ module.exports = {
         extend: {},
     },
     plugins: [
+        require('@tailwindcss/aspect-ratio'),
         require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
     ],
 }

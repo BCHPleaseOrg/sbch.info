@@ -233,13 +233,13 @@
                             </div>
                         </div>
 
-                        <router-link to="/validators" class="text-xl font-medium text-gray-100 hover:text-gray-300">
+                        <a @click="openValidators" href="javascript://" class="text-xl font-medium text-gray-100 hover:text-gray-300">
                             Validators
-                        </router-link>
+                        </a>
 
-                        <router-link to="/xhedge" class="text-xl font-medium text-gray-100 hover:text-gray-300">
+                        <a @click="openXhedge" href="javascript://" class="text-xl font-medium text-gray-100 hover:text-gray-300">
                             XHedge
-                        </router-link>
+                        </a>
 
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
@@ -721,6 +721,20 @@ export default {
             this.showResources = false
 
             this.$router.push('/verify')
+        },
+
+        openValidators() {
+            this.showAssets = false
+            this.showResources = false
+
+            this.$router.push('/validators')
+        },
+
+        openXhedge() {
+            this.showAssets = false
+            this.showResources = false
+
+            this.$router.push('/xhedge')
         },
 
     },
