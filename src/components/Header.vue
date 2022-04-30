@@ -280,22 +280,22 @@
                                     <nav class="grid gap-y-10 px-4 py-8 bg-yellow-100 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                                         <div>
                                             <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
-                                                Company
+                                                Blockchain
                                             </h3>
 
                                             <ul role="list" class="mt-5 space-y-6">
                                                 <li class="flow-root">
-                                                    <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
+                                                    <a href="javascript:alert('Coming soon..')" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
                                                         <!-- Heroicon name: outline/information-circle -->
                                                         <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                         </svg>
-                                                        <span class="ml-4">About</span>
+                                                        <span class="ml-4">View Transactions</span>
                                                     </a>
                                                 </li>
 
                                                 <li class="flow-root">
-                                                    <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
+                                                    <a href="javascript:alert('Coming soon..')" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
                                                         <!-- Heroicon name: outline/office-building -->
                                                         <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                                             <path
@@ -305,12 +305,12 @@
                                                                 d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                                                             />
                                                         </svg>
-                                                        <span class="ml-4">Customers</span>
+                                                        <span class="ml-4">View Blocks</span>
                                                     </a>
                                                 </li>
 
                                                 <li class="flow-root">
-                                                    <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
+                                                    <a href="javascript:alert('Coming soon..')" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
                                                         <!-- Heroicon name: outline/newspaper -->
                                                         <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                                             <path
@@ -320,12 +320,12 @@
                                                                 d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
                                                             />
                                                         </svg>
-                                                        <span class="ml-4">Press</span>
+                                                        <span class="ml-4">Featured Accounts</span>
                                                     </a>
                                                 </li>
 
                                                 <li class="flow-root">
-                                                    <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
+                                                    <a href="javascript:alert('Coming soon..')" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
                                                         <!-- Heroicon name: outline/briefcase -->
                                                         <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                                             <path
@@ -335,12 +335,12 @@
                                                                 d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                                                             />
                                                         </svg>
-                                                        <span class="ml-4">Careers</span>
+                                                        <span class="ml-4">Featured Contracts</span>
                                                     </a>
                                                 </li>
 
-                                                <li class="flow-root">
-                                                    <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
+                                                <li class="flow-root hidden">
+                                                    <a href="javascript:alert('Coming soon..')" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
                                                         <!-- Heroicon name: outline/shield-check -->
                                                         <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                                             <path
@@ -358,12 +358,12 @@
 
                                         <div>
                                             <h3 class="text-sm font-medium tracking-wide text-gray-500 uppercase">
-                                                Resources
+                                                Tokens
                                             </h3>
 
                                             <ul role="list" class="mt-5 space-y-6">
                                                 <li class="flow-root">
-                                                    <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
+                                                    <a href="javascript:alert('Coming soon..')" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
                                                         <!-- Heroicon name: outline/user-group -->
                                                         <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                                             <path
@@ -374,12 +374,12 @@
                                                             />
                                                         </svg>
 
-                                                        <span class="ml-4">Community</span>
+                                                        <span class="ml-4">TOP SEP20</span>
                                                     </a>
                                                 </li>
 
                                                 <li class="flow-root">
-                                                    <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
+                                                    <a href="javascript:alert('Coming soon..')" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
                                                         <!-- Heroicon name: outline/globe-alt -->
                                                         <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                                             <path
@@ -390,29 +390,29 @@
                                                             />
                                                         </svg>
 
-                                                        <span class="ml-4">Partners</span>
+                                                        <span class="ml-4">TOP SEP721</span>
                                                     </a>
                                                 </li>
 
                                                 <li class="flow-root">
-                                                    <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
+                                                    <a href="javascript:alert('Coming soon..')" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
                                                         <!-- Heroicon name: outline/bookmark-alt -->
                                                         <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                                         </svg>
 
-                                                        <span class="ml-4">Guides</span>
+                                                        <span class="ml-4">TOP SEP1155</span>
                                                     </a>
                                                 </li>
 
                                                 <li class="flow-root">
-                                                    <a href="javascript://" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
+                                                    <a href="javascript:alert('Coming soon..')" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
                                                         <!-- Heroicon name: outline/desktop-computer -->
                                                         <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                                         </svg>
 
-                                                        <span class="ml-4">Webinars</span>
+                                                        <span class="ml-4">View Transfers</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -515,27 +515,10 @@
                     <div class="mt-6 sm:mt-8">
                         <nav>
                             <div class="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
-                                <a href="javascript://" class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
+
+                                <a @click="openSearch" href="javascript://" class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
                                     <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
                                         <!-- Heroicon name: outline/chart-bar -->
-                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="2"
-                                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                                            />
-                                        </svg>
-                                    </div>
-
-                                    <div class="ml-4 text-base font-medium text-gray-900">
-                                        Analytics
-                                    </div>
-                                </a>
-
-                                <a href="javascript://" class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
-                                    <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
-                                        <!-- Heroicon name: outline/cursor-click -->
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                             <path
                                                 stroke-linecap="round"
@@ -547,13 +530,13 @@
                                     </div>
 
                                     <div class="ml-4 text-base font-medium text-gray-900">
-                                        Engagement
+                                        Smart Search
                                     </div>
                                 </a>
 
-                                <a href="javascript://" class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
+                                <a @click="openVerfied" href="javascript://" class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
                                     <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
-                                        <!-- Heroicon name: outline/shield-check -->
+                                        <!-- Heroicon name: outline/cursor-click -->
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                             <path
                                                 stroke-linecap="round"
@@ -565,11 +548,29 @@
                                     </div>
 
                                     <div class="ml-4 text-base font-medium text-gray-900">
-                                        Security
+                                        Verified Contracts
                                     </div>
                                 </a>
 
-                                <a href="javascript://" class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
+                                <a @click="openXhedge" href="javascript://" class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
+                                    <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                                        <!-- Heroicon name: outline/shield-check -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                                            />
+                                        </svg>
+                                    </div>
+
+                                    <div class="ml-4 text-base font-medium text-gray-900">
+                                        XHedge
+                                    </div>
+                                </a>
+
+                                <a @click="openValidators"  href="javascript://" class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
                                     <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
                                         <!-- Heroicon name: outline/view-grid -->
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -583,12 +584,12 @@
                                     </div>
 
                                     <div class="ml-4 text-base font-medium text-gray-900">
-                                        Integrations
+                                        Validators
                                     </div>
                                 </a>
                             </div>
 
-                            <div class="mt-8 text-base">
+                            <div class="hidden mt-8 text-base">
                                 <a href="javascript://" class="font-medium text-indigo-600 hover:text-indigo-500"> View all products <span aria-hidden="true">&rarr;</span></a>
                             </div>
                         </nav>
@@ -598,15 +599,15 @@
                 <div class="py-6 px-5">
                     <div class="grid grid-cols-2 gap-4">
                         <a href="javascript://" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                            Pricing
+                            Best Practices
                         </a>
 
                         <a href="javascript://" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                            Docs
+                            Documentation
                         </a>
 
                         <a href="javascript://" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                            Company
+                            Contract Search
                         </a>
 
                         <a href="javascript://" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
@@ -614,11 +615,11 @@
                         </a>
 
                         <a href="javascript://" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                            Blog
+                            SmartBCH Blog
                         </a>
 
                         <a href="javascript://" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                            Contact Sales
+                            Knowledge Center
                         </a>
                     </div>
 
@@ -712,19 +713,29 @@ export default {
         },
 
         openSearch() {
+            this.showMobileMenu = false
             this.showResources = false
 
             this.$router.push('/search')
         },
 
         openVerify() {
+            this.showMobileMenu = false
             this.showResources = false
 
             this.$router.push('/verify')
         },
 
+        openVerfied() {
+            this.showMobileMenu = false
+            this.showResources = false
+
+            this.$router.push('/verified')
+        },
+
         openValidators() {
             this.showAssets = false
+            this.showMobileMenu = false
             this.showResources = false
 
             this.$router.push('/validators')
@@ -732,6 +743,7 @@ export default {
 
         openXhedge() {
             this.showAssets = false
+            this.showMobileMenu = false
             this.showResources = false
 
             this.$router.push('/xhedge')

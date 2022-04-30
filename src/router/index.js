@@ -7,6 +7,7 @@ import Address from '../views/Address'
 import Blocks from '../views/Blocks'
 import Transaction from '../views/Transaction'
 import Validators from '../views/Validators'
+import Verified from '../views/Verified'
 import Verify from '../views/Verify'
 import XHedge from '../views/XHedge'
 
@@ -38,6 +39,10 @@ const routes = [
     {
         path: '/validators',
         component: Validators,
+    },
+    {
+        path: '/verified',
+        component: Verified,
     },
     {
         path: '/verify',

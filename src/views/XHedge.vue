@@ -1,27 +1,30 @@
 <template>
     <main class="relative py-8 bg-white overflow-hidden">
 
-        <div class="flex justify-center mt-5 mb-10">
-            <span class="relative z-0 inline-flex shadow-sm rounded-md">
+        <div class="flex relative z-10 justify-center mt-5 mb-10">
+            <span class="relative inline-flex shadow-sm rounded-md">
                 <button
+                    @click="showIntro"
                     type="button"
-                    class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                    class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-500 bg-gray-100 text-2xl font-medium text-gray-700 hover:bg-gray-200 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
                 >
-                    Intro
+                    Introduction
                 </button>
 
                 <button
+                    @click="showVoting"
                     type="button"
-                    class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                    class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-500 bg-gray-100 text-2xl font-medium text-gray-700 hover:bg-gray-200 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
                 >
-                    Voting
+                    Validator Voting
                 </button>
 
                 <button
+                    @click="showStats"
                     type="button"
-                    class="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+                    class="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-500 bg-gray-100 text-2xl font-medium text-gray-700 hover:bg-gray-200 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
                 >
-                    Stats
+                    Charts &amp; Stats
                 </button>
             </span>
         </div>
@@ -66,7 +69,7 @@
             <div class="text-lg max-w-prose mx-auto">
                 <h1>
                     <span class="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
-                        Introducing
+                        Introduction
                     </span>
 
                     <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -233,6 +236,20 @@ export default {
         return {
             //
         }
+    },
+    methods: {
+        showIntro() {
+            alert('load intro')
+        },
+
+        showVoting() {
+            alert('load voting')
+        },
+
+        showStats() {
+            alert('load stats')
+        },
+
     },
     created: function () {
         //
