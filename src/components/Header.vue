@@ -233,8 +233,8 @@
                             </div>
                         </div>
 
-                        <a @click="openVerified" href="javascript://" class="text-xl font-medium text-gray-100 hover:text-gray-300">
-                            Verified
+                        <a @click="openContracts" href="javascript://" class="text-xl font-medium text-gray-100 hover:text-gray-300">
+                            Contracts
                         </a>
 
                         <a @click="openXhedge" href="javascript://" class="text-xl font-medium text-gray-100 hover:text-gray-300">
@@ -534,7 +534,7 @@
                                     </div>
                                 </a>
 
-                                <a @click="openVerified" href="javascript://" class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
+                                <a @click="openContracts" href="javascript://" class="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
                                     <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
                                         <!-- Heroicon name: outline/cursor-click -->
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -548,7 +548,7 @@
                                     </div>
 
                                     <div class="ml-4 text-base font-medium text-gray-900">
-                                        Verified Contracts
+                                        Contracts Contracts
                                     </div>
                                 </a>
 
@@ -726,11 +726,11 @@ export default {
             this.$router.push('/verify')
         },
 
-        openVerified() {
+        openContracts() {
             this.showMobileMenu = false
             this.showResources = false
 
-            this.$router.push('/verified')
+            this.$router.push('/contracts')
         },
 
         openValidators() {

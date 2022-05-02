@@ -77,21 +77,27 @@
                                     <a v-else class="text-gray-500 font-bold">
                                         Web
                                     </a>
+
                                     <span class="mx-2 text-gray-500">|</span>
+
                                     <a v-if="validator.twitter" :href="validator.twitter" target="_blank" class="text-blue-500 font-bold hover:underline">
                                         Twitter
                                     </a>
                                     <a v-else class="text-gray-500 font-bold">
                                         Twitter
                                     </a>
+
                                     <span class="mx-2 text-gray-500">|</span>
+
                                     <a v-if="validator.readCash" :href="validator.readCash" target="_blank" class="text-blue-500 font-bold hover:underline">
                                         Read.cash
                                     </a>
                                     <a v-else class="text-gray-500 font-bold">
                                         Read.cash
                                     </a>
+
                                     <span v-if="validator.blog" class="mx-2 text-gray-500">|</span>
+
                                     <a v-if="validator.blog" :href="validator.blog" target="_blank" class="text-blue-500 font-bold hover:underline">
                                         Blog
                                     </a>

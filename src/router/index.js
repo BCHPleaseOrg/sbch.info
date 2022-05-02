@@ -5,9 +5,9 @@ import Home from '../views/Home'
 import About from '../views/About'
 import Address from '../views/Address'
 import Blocks from '../views/Blocks'
+import Contracts from '../views/Contracts'
 import Transaction from '../views/Transaction'
 import Validators from '../views/Validators'
-import Verified from '../views/Verified'
 import Verify from '../views/Verify'
 import XHedge from '../views/XHedge'
 
@@ -29,6 +29,10 @@ const routes = [
         component: Blocks,
     },
     {
+        path: '/contracts',
+        component: Contracts,
+    },
+    {
         path: '/transaction/:txid',
         component: Transaction,
     },
@@ -39,10 +43,6 @@ const routes = [
     {
         path: '/validators',
         component: Validators,
-    },
-    {
-        path: '/verified',
-        component: Verified,
     },
     {
         path: '/verify',
