@@ -129,7 +129,7 @@
         </section>
 
         <section class="mt-10 max-w-3xl mx-auto">
-            <div class="mx-12 sm:mx-16 p-3 border-2 border-yellow-400 shadow-xl bg-yellow-50 text-yellow-700 text-xs sm:text-sm text-center rounded-xl">
+            <div class="mx-8 sm:mx-16 p-3 border-2 border-yellow-400 shadow-xl bg-yellow-50 text-yellow-700 text-xs sm:text-sm text-center rounded-xl">
                 <span class="block">We will showcase <strong>EVERY</strong> supporter than donates <strong>$5 or more</strong> on our respective sponsor pages.</span>
                 <span class="mt-3 block">Sponsors will always be listed in the order of their first donation.</span>
                 <span class="mt-3 block">Sponsors may increase the value of their donation at any time.</span>

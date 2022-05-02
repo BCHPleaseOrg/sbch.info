@@ -13,7 +13,7 @@
                     </span>
 
                     <span class="block sm:ml-2 sm:inline-block">
-                        <a href="javascript://" class="text-white font-bold underline"> Learn more <span aria-hidden="true">&rarr;</span></a>
+                        <a href="https://read.cash/@BCHPleaseOrg/smartbch-contract-security-report-c2ae7401" target="_blank" class="text-white font-bold underline"> Learn more <span aria-hidden="true">&rarr;</span></a>
                     </span>
                 </p>
             </div>
