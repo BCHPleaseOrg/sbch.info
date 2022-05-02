@@ -244,18 +244,65 @@ export default {
         })
 
         this.contracts.push({
-            id: '60c13e6f-894e-4848-ab71-9cf20650ecf8',
-            title: `ViaBTC`,
-            cat: '???',
-            account: '0x0',
-            description: `ViaBTC serves users in 130+ countries around the world with tens of billions of dollars in cumulative mining output value, and provides professional mining service for BTC, ETH, LTC, etc.`,
+            id: '5166d86b-9008-4c90-a296-b5f587952f45',
+            title: `CashCats`,
+            cat: 'Token',
+            account: '0x265bd28d79400d55a1665707fa14a72978fa6043',
+            description: `Ultimately, CashCats aims to be an extension of the BCH peer-to-peer electronic cash movement & a mascot for the BCH community. We love $CATS! `,
             verified: [],
             audits: [],
-            avatar: '',
-            banner: '',
-            web: '',
-            twitter: '',
+            avatar: 'https://i.imgur.com/pGGocRN.png',
+            banner: 'https://i.imgur.com/cWqnVn7.png',
+            web: 'https://cashcats.org/',
+            twitter: 'https://twitter.com/CashCatsBCH',
             blog: '',
+        })
+
+        this.contracts.push({
+            id: 'd1c285c5-27e9-4a38-a3df-7bffea78eadb',
+            title: `MistSwap`,
+            cat: 'Decentralized Exchange',
+            account: '0x0',
+            description: `We are building tools that enable people to interact permissionlessly, without borders. Only with Bitcoin Cash.`,
+            verified: [],
+            audits: [],
+            avatar: 'https://i.imgur.com/VFRaVrX.png',
+            banner: 'https://i.imgur.com/GZEluwg.png',
+            web: 'https://mistswap.fi/',
+            twitter: 'https://twitter.com/mistswapdex',
+            github: 'https://github.com/mistswapdex',
+            blog: '',
+        })
+
+        this.contracts.push({
+            id: '342a308c-16c6-4133-8db1-ab5d613291ec',
+            title: `Bitcoin Cash Name Service (LNS)`,
+            cat: 'Protocol',
+            account: '0x0',
+            description: `The Bitcoin Cash Name Service (LNS) is a distributed, open, and extensible naming system based on the smartBCH blockchain. It is a fork of the ENS project.`,
+            verified: [],
+            audits: [],
+            avatar: 'https://i.imgur.com/fwURHdf.png',
+            banner: 'https://i.imgur.com/xpv0LXC.png',
+            web: 'https://bch.domains/',
+            twitter: 'https://twitter.com/bchdomains',
+            github: 'https://github.com/bchdomains',
+            blog: '',
+        })
+
+        this.contracts.push({
+            id: '4628c9e9-6045-450c-96c2-2e185d3d404f',
+            title: `Joystick Club`,
+            cat: 'GameFi',
+            account: '0x6732E55Ac3ECa734F54C26Bd8DF4eED52Fb79a6E',
+            description: `Play games and earn crypto with Joystick.club. The first blockchain arcade on smartBCH, a low fee sidechain for the Bitcoin Cash network. We brought the vintage arcade into the modern era.`,
+            verified: [],
+            audits: [],
+            avatar: 'https://i.imgur.com/8qU9Kx7.png',
+            banner: 'https://i.imgur.com/Y4DSVM8.png',
+            web: 'https://smart.joystick.club/',
+            twitter: '',
+            blog: 'https://blog.joystick.club/',
         })
 
     },

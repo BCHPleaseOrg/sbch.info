@@ -9,7 +9,7 @@
                     <img class="h-10" :src="require('@/assets/images/logo.png')" alt="Company name" />
 
                     <p class="text-gray-500 text-base">
-                        <strong>Smart Bitcoin Info Center</strong> is a FREE portal providing SBCH stakeholders with a the complete suite of the tools and resources they'll need to work smarter and not harder.
+                        <strong>Smart Bitcoin Info Center</strong> is a FREE portal providing SBCH stakeholders with the complete suite of tools and resources they'll need to work smarter and not harder.
                     </p>
 
                     <p class="text-gray-500 text-sm">
