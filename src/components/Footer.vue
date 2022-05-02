@@ -52,7 +52,7 @@
                     </div>
                 </div>
 
-                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
                     <div class="hidden md:grid md:grid-cols-1 md:gap-2">
                         <div class="hidden">
                             <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
@@ -130,6 +130,12 @@
                                     <a href="https://docs.sbch.info" target="_blank" class="text-base text-gray-500 hover:text-gray-900">
                                         Documenation
                                     </a>
+                                </li>
+
+                                <li>
+                                    <router-link to="/sponsors" class="text-base text-gray-500 hover:text-gray-900">
+                                        Sponsors
+                                    </router-link>
                                 </li>
 
                                 <li>

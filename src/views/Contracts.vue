@@ -40,7 +40,7 @@
                                     <span class="text-gray-700">( {{contract.verified.length ? 'Verified' : 'Not Verified' }} )</span>
                                 </small>
 
-                                <p class="mt-3 text-base text-gray-500">
+                                <p class="three-lines mt-3 text-base text-gray-500">
                                     {{contract.description}}
                                 </p>
                             </a>
@@ -63,10 +63,10 @@
                             <div class="ml-3">
                                 <p class="text-sm font-medium text-gray-900">
                                     <a v-if="contract.web" :href="contract.web" target="_blank" class="hover:underline">
-                                        {{contract.title}}
+                                        {{contract.producer || contract.title}}
                                     </a>
                                     <a v-else class="">
-                                        {{contract.title}}
+                                        {{contract.producer || contract.title}}
                                     </a>
                                 </p>
 
@@ -196,6 +196,54 @@ export default {
         })
 
         this.contracts.push({
+            id: '10fb9ce4-232e-49af-9d86-9b8545001a7f',
+            title: `GoCrypto`,
+            cat: 'Payment Network',
+            account: '0x0',
+            description: `GoCrypto operates as a global payment scheme connecting all the stakeholders interested in crypto – crypto users, crypto wallets, crypto exchanges, cashier system providers, payment solution providers and merchants.`,
+            verified: [],
+            audits: [],
+            avatar: 'https://i.imgur.com/J6jkrgn.png',
+            banner: 'https://i.imgur.com/0SWyRRZ.png',
+            web: 'https://gocrypto.com/',
+            twitter: 'https://twitter.com/GoCrypto_',
+            blog: 'https://medium.com/eligma-blog',
+        })
+
+        this.contracts.push({
+            id: 'fd26ad66-e98c-48f5-9f4f-166aa8b728f4',
+            title: `BlockNG Law Token`,
+            producer: `BlockNG`,
+            cat: 'Token',
+            account: '0x0',
+            description: `THE NEXT GENERATION SYNTHETIC CURRENCY`,
+            verified: [],
+            audits: [],
+            avatar: 'https://i.imgur.com/2Fbhu6U.png',
+            banner: 'https://i.imgur.com/8Z3Aokr.jpg',
+            web: 'https://blockng.money',
+            twitter: 'https://mobile.twitter.com/blockngo',
+            blog: 'https://medium.com/@blockng',
+        })
+
+        this.contracts.push({
+            id: 'a5be01e4-e17c-4374-bd26-d3469bb6302a',
+            title: `BenSwap - Green Ben (EBEN)`,
+            producer: `BenSwap`,
+            cat: 'Token',
+            account: '0x77CB87b57F54667978Eb1B199b28a0db8C8E1c0B',
+            description: `Green Ben (EBEN) is the utility and governance token of BenSwap (SmartBCH). Users need EBEN to use the features on BenSwap (SmartBCH).`,
+            verified: [],
+            audits: [],
+            avatar: 'https://i.imgur.com/micXrb3.png',
+            banner: 'https://i.imgur.com/rn1GRhS.png',
+            web: 'https://docs.benswap.cash/tokenomics/green-ben-eben',
+            twitter: 'https://twitter.com/BenTokenFinanc1',
+            blog: '',
+            github: 'https://github.com/BenTokenFinance',
+        })
+
+        this.contracts.push({
             id: '60c13e6f-894e-4848-ab71-9cf20650ecf8',
             title: `ViaBTC`,
             cat: '???',
@@ -203,8 +251,8 @@ export default {
             description: `ViaBTC serves users in 130+ countries around the world with tens of billions of dollars in cumulative mining output value, and provides professional mining service for BTC, ETH, LTC, etc.`,
             verified: [],
             audits: [],
-            avatar: 'https://i.imgur.com/LBncDdj.png',
-            banner: 'https://i.imgur.com/8Z02k4g.png',
+            avatar: '',
+            banner: '',
             web: '',
             twitter: '',
             blog: '',
