@@ -10,7 +10,7 @@
                     Smart Contracts
                 </h2>
 
-                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                <p class="mt-3 max-w-2xl mx-auto text-lg sm:text-xl text-gray-500 sm:mt-4">
                     Browse our showcase of the MOST popular smart contracts being supported by the SmartBCH community.
                 </p>
             </div>
@@ -161,6 +161,21 @@ export default {
             twitter: 'https://twitter.com/BitcoinCom',
             blog: '',
             stats: 'https://analytics.verse.bitcoin.com/',
+        })
+
+        this.contracts.push({
+            id: 'e441bd27-4fe7-49b4-b0f7-a86b950bd681',
+            title: `FlexUSD`,
+            cat: 'Centralized Exchange',
+            account: '0x0',
+            description: `The first of its kind, flexUSD is fully backed and redeemable with USDC and pays interest 3 times a day on chain.`,
+            verified: [],
+            audits: [],
+            avatar: 'https://i.imgur.com/pOxJM3q.png',
+            banner: 'https://i.imgur.com/1D0cpmz.png',
+            web: 'https://flexusd.com/',
+            twitter: '',
+            blog: '',
         })
 
         this.contracts.push({

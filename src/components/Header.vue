@@ -548,7 +548,7 @@
                                     </div>
 
                                     <div class="ml-4 text-base font-medium text-gray-900">
-                                        Contracts Contracts
+                                        Smart Contracts
                                     </div>
                                 </a>
 

@@ -10,7 +10,7 @@
                     SmartBCH Validators
                 </h2>
 
-                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                <p class="mt-3 max-w-2xl mx-auto text-lg sm:text-xl text-gray-500 sm:mt-4">
                     The trusted group of companies, individuals and stakeholders responsible for verifying transactions on the SmartBCH blockchain.
                 </p>
             </div>

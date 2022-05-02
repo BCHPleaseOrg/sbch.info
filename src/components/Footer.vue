@@ -9,11 +9,12 @@
                     <img class="h-10" :src="require('@/assets/images/logo.png')" alt="Company name" />
 
                     <p class="text-gray-500 text-base">
-                        <strong>Smart Bitcoin Info Center</strong> is a FREE portal providing SBCH stakeholders with the tools and resources they need to work smarter not harder.
+                        <strong>Smart Bitcoin Info Center</strong> is a FREE portal providing SBCH stakeholders with a the complete suite of the tools and resources they'll need to work smarter and not harder.
                     </p>
 
                     <p class="text-gray-500 text-sm">
-                        By using this application you agree to the <a class="text-red-400" href="javascript://">Terms of Use</a>
+                        By using this application you agree to the
+                        <br class="sm:hidden" /> <router-link to="/tos" class="text-red-400">Terms of Service</router-link>
                     </p>
 
                     <div class="flex space-x-6">
@@ -52,7 +53,7 @@
                 </div>
 
                 <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-                    <div class="md:grid md:grid-cols-1 md:gap-2">
+                    <div class="hidden md:grid md:grid-cols-1 md:gap-2">
                         <div class="hidden">
                             <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                                 Products &amp; Services
@@ -194,8 +195,9 @@
             </div>
 
             <div class="mt-12 border-t border-gray-200 pt-8">
-                <p class="text-base text-gray-400 xl:text-center">
-                    Copyright &copy; {{curYear}} <a class="text-blue-500 font-bold hover:underline" href="https://bchplease.org" target="_blank">Bitcoin Please</a>. All rights reserved.
+                <p class="text-base text-gray-400 text-center">
+                    Copyright &copy; {{curYear}} <a class="text-blue-500 font-bold hover:underline" href="https://bchplease.org" target="_blank">Bitcoin Please</a>.
+                    <br class="sm:hidden" />All rights reserved.
                 </p>
             </div>
         </div>

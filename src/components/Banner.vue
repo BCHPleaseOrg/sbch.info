@@ -5,7 +5,7 @@
             <div class="pr-16 sm:text-center sm:px-16">
                 <p class="font-medium text-white">
                     <span class="md:hidden">
-                        Introducing sBCH Info!
+                        Introducing Smart Bitcoin Info Center
                     </span>
 
                     <span class="hidden md:inline">

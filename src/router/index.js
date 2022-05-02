@@ -6,6 +6,7 @@ import About from '../views/About'
 import Address from '../views/Address'
 import Blocks from '../views/Blocks'
 import Contracts from '../views/Contracts'
+import Terms from '../views/Terms'
 import Transaction from '../views/Transaction'
 import Validators from '../views/Validators'
 import Verify from '../views/Verify'
@@ -31,6 +32,10 @@ const routes = [
     {
         path: '/contracts',
         component: Contracts,
+    },
+    {
+        path: '/tos',
+        component: Terms,
     },
     {
         path: '/transaction/:txid',
