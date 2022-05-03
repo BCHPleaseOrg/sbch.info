@@ -2,19 +2,38 @@
     <main class="max-w-7xl mx-auto">
         <Stats />
 
-        <section class="text-center p-7">
-            <h1 class="hidden text-5xl font-extrabold">
-                Smart Bitcoin Info Center
-            </h1>
-
-            <div v-if="blockNum" class="w-2/5 mx-auto mt-5 flex justify-center py-3 px-7 bg-purple-200 text-3xl font-medium text-pink-500 border-4 border-purple-500 rounded-xl">
+        <section class="text-center mx-4 grid grid-cols-2 gap-4 md:flex">
+            <div v-if="blockNum" class="md:w-2/5 mx-auto mt-5 flex justify-center py-3 px-3 md:px-7 bg-purple-200 text-xl md:text-3xl font-medium text-pink-500 border-4 border-purple-500 rounded-xl">
                 Block height is {{blockNumDisplay}}
             </div>
 
-            <div v-if="lastBlockTime" class="w-2/5 mx-auto mt-5 flex justify-center py-3 px-7 bg-purple-200 text-3xl font-medium text-pink-500 border-4 border-purple-500 rounded-xl">
+            <div v-if="lastBlockTime" class="md:w-2/5 mx-auto mt-5 flex justify-center py-3 px-3 md:px-7 bg-purple-200 text-xl md:text-3xl font-medium text-pink-500 border-4 border-purple-500 rounded-xl">
                 Last block was {{lastBlockDisplay}}
             </div>
         </section>
+
+        <section class="mt-10 flex flex-col md:grid md:grid-cols-3 gap-4">
+            <div class="flex flex-row justify-center col-span-2 border-r-2 border-gray-200">
+                <div class="px-10">
+                    <h3 class="text-xl text-gray-700 font-bold">
+                        We're still buidling our new portal, but checkout what's coming soon:
+                    </h3>
+
+                    <ul class="list-disc list-inside pl-5 pt-3">
+                        <li>Token &amp; NFT Asset Management</li>
+                        <li>Token &amp; NFT Reports</li>
+                        <li>Historical Stats &amp; Charts</li>
+                        <li>Statistical Chart Analysis</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="my-10 md:my-0 px-5 flex flex-row justify-center">
+                <img :src="require('@/assets/lottie/60365-stock.gif')" class="col-span-1 w-64 h-64" />
+                <!-- <img :src="require('@/assets/lottie/74398-analyze-illustration.gif')" class="w-64 h-64" /> -->
+            </div>
+        </section>
+
     </main>
 
     <Details class="hidden" />
