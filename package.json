@@ -1,6 +1,6 @@
 {
   "name": "sbch-info",
-  "version": "22.4.29",
+  "version": "22.6.21",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -42,6 +42,7 @@
     "eslint": "6.7.2",
     "eslint-plugin-vue": "7.0.0",
     "geckodriver": "1.20.0",
+    "hardhat": "2.9.9",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "3.9.3",
     "vue-jest": "4.0.1",
