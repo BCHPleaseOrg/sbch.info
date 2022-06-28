@@ -1,6 +1,6 @@
 {
   "name": "sbch-info",
-  "version": "22.6.21",
+  "version": "22.6.27",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -21,7 +21,8 @@
     "uuid": "8.3.2",
     "vue": "3.0.0",
     "vue-router": "4.0.14",
-    "vuex": "4.0.2"
+    "vuex": "4.0.2",
+    "vuex-persistedstate": "4.1.0"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "0.2.1",

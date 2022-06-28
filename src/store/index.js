@@ -1,12 +1,18 @@
 import { createStore } from 'vuex'
 
+import createPersistedState from 'vuex-persistedstate'
+
+import { dataStore } from './module'
+
+const dataState = createPersistedState({
+    paths: ['address']
+})
+
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+    modules: {
+        dataStore,
+    },
+    plugins: [
+        dataState,
+    ],
 })

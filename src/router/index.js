@@ -4,7 +4,10 @@ import Home from '../views/Home'
 
 import About from '../views/About'
 import Address from '../views/Address'
+
 import Blocks from '../views/Blocks'
+import BlockDetails from '../views/BlockDetails'
+
 import Contracts from '../views/Contracts'
 import Search from '../views/Search'
 import Sponsors from '../views/Sponsors'
@@ -30,6 +33,10 @@ const routes = [
     {
         path: '/blocks',
         component: Blocks,
+    },
+    {
+        path: '/blocks/:blockid',
+        component: BlockDetails,
     },
     {
         path: '/contracts',
