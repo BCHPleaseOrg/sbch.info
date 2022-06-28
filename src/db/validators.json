@@ -1,0 +1,303 @@
+[
+    {
+        "address": "0x9a6dd2f7ceb71788de691844d16b6b6852f07aa3",
+        "pubkey": "0xfbdc5c690ab36319d6a68ed50407a61d95d0ec6a6e9225a0c40d17bd8358010e",
+        "reward_to": "0x9a6dd2f7ceb71788de691844d16b6b6852f07aa3",
+        "voting_power": 1,
+        "introduction": "matrixport",
+        "is_retiring": false,
+        "miner_address": "0x930C23CE7536B0EDE6AFE7754134D4011217D6AA"
+    },
+    {
+        "address": "0x7dd41d92235cbbe0d2fe4ebd548cdd29f9befe5e",
+        "pubkey": "0x45caa8b683a1838f6cf8c3de60ef826ceaac27351843bc9f8c84cedb7da9a8a0",
+        "reward_to": "0x7dd41d92235cbbe0d2fe4ebd548cdd29f9befe5e",
+        "voting_power": 1,
+        "introduction": "btccom",
+        "is_retiring": false,
+        "miner_address": "0x8A3B04DB500735E05A1CD05ED9E00176954D8438"
+    },
+    {
+        "address": "0xde5ddf2a1101d9501aa3db39750acb1764aa5c5b",
+        "pubkey": "0xfc609736388585e77dc106885dd401b1dab7be87e61a3597239db9d0483e9a46",
+        "reward_to": "0xde5ddf2a1101d9501aa3db39750acb1764aa5c5b",
+        "voting_power": 1,
+        "introduction": "viabtc",
+        "is_retiring": false,
+        "miner_address": "0x4BC2DBE39A961D568A33593B36AB2F5C9331FBA5"
+    },
+    {
+        "address": "0x79f3f9f9c0e860341e5a20c6801ad28fb1fbd924",
+        "pubkey": "0x9131d960eeb5819cbb4c9d1109ab9587eece8362981a32fa4548a555116b7667",
+        "reward_to": "0x3ed12ca3ca7049ca852667130ca2291a19bad0e4",
+        "voting_power": 1,
+        "introduction": "SatoshiAngel",
+        "is_retiring": false,
+        "miner_address": "0x8BD806107E294E7046580D5DB0830035CA621631"
+    },
+    {
+        "address": "0xb38f1c422d53dd910e52818ae00eed9c12c6e46b",
+        "pubkey": "0xc4d5dc409153640c87be5eeea816ebb1cf9e05e4eaf74153ab247e5db26b87e4",
+        "reward_to": "0xb38f1c422d53dd910e52818ae00eed9c12c6e46b",
+        "voting_power": 1,
+        "introduction": "BTC.TOP",
+        "is_retiring": false,
+        "miner_address": "0x1330A2DBB6B4539C088410FD709CD8297E45E052"
+    },
+    {
+        "address": "0x9f292bc24c09ace90827ccbbed7ecf5d797bea12",
+        "pubkey": "0x8cd0cc8deb166907696b6be31fe1ce65e3726bc55447e6bd49b81b16b39f7d54",
+        "reward_to": "0x9f292bc24c09ace90827ccbbed7ecf5d797bea12",
+        "voting_power": 1,
+        "introduction": "songoku",
+        "is_retiring": false,
+        "miner_address": "0x276F23889C7F89D81553C61ED9DB2BFF92CB22F5"
+    },
+    {
+        "address": "0x7f15402b5f214725cf1b16ac46bf6249f94a44ec",
+        "pubkey": "0xe87d6f80a376f2e8322a31f570d217e74d9531788b0a333d259b03b64a9a7301",
+        "reward_to": "0x7f15402b5f214725cf1b16ac46bf6249f94a44ec",
+        "voting_power": 1,
+        "introduction": "GoBCH",
+        "is_retiring": false,
+        "miner_address": "0x93FFE3EE2EFDA341E8ED03584E2A4093471ADECC"
+    },
+    {
+        "address": "0x34736ffed06479d9c7b2bd1c9eca669b4df67c3a",
+        "pubkey": "0xec51ed422b8f1a144c1cf5ec2f60ed5fd7bd1a4aaff95a1127265f213a392ef2",
+        "reward_to": "0x34736ffed06479d9c7b2bd1c9eca669b4df67c3a",
+        "voting_power": 1,
+        "introduction": "BCH101",
+        "is_retiring": false,
+        "miner_address": "0x8EA63B8BB4333FAFEC6A883395F36EC4E2526421"
+    },
+    {
+        "address": "0xc40699716a0b8160e7dfabcf5ed7f391c17abd58",
+        "pubkey": "0xe411a12c9e578afede142f3fafc53ef0b4ef6790e32c0f693565d9464bbe3017",
+        "reward_to": "0xc40699716a0b8160e7dfabcf5ed7f391c17abd58",
+        "voting_power": 1,
+        "introduction": "BCHFANS",
+        "is_retiring": false,
+        "miner_address": "0x5889D1C40BC8FD3DE51AE3D189A3F8AC395F49D8"
+    },
+    {
+        "address": "0xb6f5eddac3abd8394cc0c9f9673fad76fc1c0813",
+        "pubkey": "0x07928a1a17102476d8be0734dc09ee3a4ee6346511ec9bf2fbbb63f7399a9fdc",
+        "reward_to": "0xb6f5eddac3abd8394cc0c9f9673fad76fc1c0813",
+        "voting_power": 1,
+        "introduction": "BCHANGE",
+        "is_retiring": false,
+        "miner_address": "0x5E493E16AC57D7509235FA0C87FD3FE7B0A16A1C"
+    },
+    {
+        "address": "0x827594fafd443784c85404575214c9a965dda4e6",
+        "pubkey": "0xc8a2e8f5be69d6fc55f31ed537dc872377965d2d579bd722a2f744ad93148c6d",
+        "reward_to": "0x827594fafd443784c85404575214c9a965dda4e6",
+        "voting_power": 1,
+        "introduction": "SmartVal",
+        "is_retiring": false,
+        "miner_address": "0xF22A003226B2221B00906C7435C2EB582223C5C2"
+    },
+    {
+        "address": "0xd4eab999aeb4970b071ae721c67e419af7ef7c78",
+        "pubkey": "0xf2b6cdd66dc29e7bf91cc5aac89a4331822698a8b4d761c146c7a1c0eec7dad1",
+        "reward_to": "0xd4eab999aeb4970b071ae721c67e419af7ef7c78",
+        "voting_power": 1,
+        "introduction": "BCHDEFI",
+        "is_retiring": false,
+        "miner_address": "0xA6A8B2AF02F8A7212383A7E2079ABC6527A6FFDC"
+    },
+    {
+        "address": "0x0f9b0ef7d4b429a21d62681d2f0e74912fc81bbc",
+        "pubkey": "0x2bcccc30d6b862b7bd4a820a101899f17928badf18b2d4446137cdf930d990aa",
+        "reward_to": "0x0f9b0ef7d4b429a21d62681d2f0e74912fc81bbc",
+        "voting_power": 1,
+        "introduction": "BCHWORLD",
+        "is_retiring": false,
+        "miner_address": "0x1A186E20A2898BA755AFF590E82BB84FA88571B3"
+    },
+    {
+        "address": "0x61c60cd5022bfacac2cec2a0b2cc636d9105c61e",
+        "pubkey": "0x1c5748fb757e3b06b713317b3107b1b867c981f8203e725e399b5dd30319e2dd",
+        "reward_to": "0x61c60cd5022bfacac2cec2a0b2cc636d9105c61e",
+        "voting_power": 1,
+        "introduction": "BCHReloaded",
+        "is_retiring": false,
+        "miner_address": "0x9A22D3E456E3DF8F4E8B2FD352F7090FEB19F79A"
+    },
+    {
+        "address": "0x1111dfa0057f1af1837bb00fddb0eb0b45f7d987",
+        "pubkey": "0xaea6ed972dd52ff696d468b430b4c7c33fd4ffbe4beee282960857f336127f6b",
+        "reward_to": "0x1111dfa0057f1af1837bb00fddb0eb0b45f7d987",
+        "voting_power": 1,
+        "introduction": "MoonBCH",
+        "is_retiring": false,
+        "miner_address": "0xE0E9FEBAA77EE5425CA14D3E71C54DB82C2BBBA1"
+    },
+    {
+        "address": "0xb90587f9942684435f89c4c576aedabcfadb2da8",
+        "pubkey": "0xe22fa465aac7d26f08d9cd375086111dd1b65aea3fcf2527acc370df7df91e6a",
+        "reward_to": "0xb90587f9942684435f89c4c576aedabcfadb2da8",
+        "voting_power": 1,
+        "introduction": "waterloan",
+        "is_retiring": false,
+        "miner_address": "0x105E7F89F04CAF3A8FB6338CA687C84A9D068D02"
+    },
+    {
+        "address": "0xbea9c9134bdb6bc0ab04e36fa0da0752df96aa31",
+        "pubkey": "0x5c67273c2c38c3c859527537b3fd368b580ccdd6ddf1397b4bb33d94807a2f3f",
+        "reward_to": "0xbea9c9134bdb6bc0ab04e36fa0da0752df96aa31",
+        "voting_power": 1,
+        "introduction": "SmartCash",
+        "is_retiring": false,
+        "miner_address": "0x134F303010E0B3BA917720049FF29FCAEAD4AF15"
+    },
+    {
+        "address": "0xb81d4512c467a222255f319b4787197100018e71",
+        "pubkey": "0x8b568d4ef5bd665f6fd930b5edf3adfe6e57b9e68cf4377da1991562adc1ef71",
+        "reward_to": "0xb81d4512c467a222255f319b4787197100018e71",
+        "voting_power": 1,
+        "introduction": "BCHDAO",
+        "is_retiring": false,
+        "miner_address": "0x58741818A0B2ECE4755D35C944EACDD9C6CAE073"
+    },
+    {
+        "address": "0x7c71bbb5b073b725626f13d10ccfc06c445318d3",
+        "pubkey": "0x41b99384a489e81dd8f547a8bc7a265943e1ccc82ceeeaa705cb94ae0dc838c6",
+        "reward_to": "0x7c71bbb5b073b725626f13d10ccfc06c445318d3",
+        "voting_power": 1,
+        "introduction": "NFTParadise",
+        "is_retiring": false,
+        "miner_address": "0x06C8BD3D38F4A1983958D4DB60D3444C383F495D"
+    },
+    {
+        "address": "0x12639cade6d2fdfaa79e536fcfdf79e56b537097",
+        "pubkey": "0xf2d58d0bc31f43104cf501c43eab32a98b62caeb6a4762e30c38a5fd3a8aa5f8",
+        "reward_to": "0x12639cade6d2fdfaa79e536fcfdf79e56b537097",
+        "voting_power": 1,
+        "introduction": "DAOportValidatorA",
+        "is_retiring": false,
+        "miner_address": "0x68E34A89DFCF90AF7FA5EAEEC99EFB12559B9611"
+    },
+    {
+        "address": "0xf55c379819a366a8a31b5ac6fbebd61f8504b8c1",
+        "pubkey": "0x3fffc0dfb7f6ecdc0b00407bc31f95665d92e7cf48b3b2fb0ecd04a5a32c1b6d",
+        "reward_to": "0xf55c379819a366a8a31b5ac6fbebd61f8504b8c1",
+        "voting_power": 1,
+        "introduction": "BCHAlpha",
+        "is_retiring": false,
+        "miner_address": "0x1D9E7D42BFA2DA20E8EE79653DBFAD76AC23BE27"
+    },
+    {
+        "address": "0x42bde43b98a35885f65e6999412ed7af12f21606",
+        "pubkey": "0x4b65ae6ba951791541631de650a6df35fa37a994d373fb3d5aebaaa4f2350751",
+        "reward_to": "0x42bde43b98a35885f65e6999412ed7af12f21606",
+        "voting_power": 1,
+        "introduction": "KimDotcom",
+        "is_retiring": false,
+        "miner_address": "0x8BCE68C4092C2D0DC369682520BA31F833518036"
+    },
+
+
+
+
+    {
+        "address": "0xa6ad00a03ff114f6123ca716ed110328b7967213",
+        "pubkey": "0x99d264748cef3c8fb5fb5558dc9a513305359a981bf06b8a898ba08cdad1234a",
+        "reward_to": "0x12639cade6d2fdfaa79e536fcfdf79e56b537097",
+        "voting_power": 1,
+        "introduction": "DAOportValidatorB",
+        "is_retiring": false,
+        "miner_address": "0x243B6996F494A219343D0CAB6AEC9A246336C669"
+    },
+    {
+        "address": "0x0a8abb2aea5bfe55e5971a7dcb2c76aba2b7fd80",
+        "pubkey": "0x6967a535dc8949c6a46a71553f73ee789a27fe40600cd3aaafb10477722dd0b4",
+        "reward_to": "0x12639cade6d2fdfaa79e536fcfdf79e56b537097",
+        "voting_power": 1,
+        "introduction": "DAOportValidatorC",
+        "is_retiring": false,
+        "miner_address": "0x8AD266ED86C2E989729F07CB93271E9E8D20455E"
+    },
+    {
+        "address": "0xfda1fab7d61ad161c6726e1a78be53a3d369265d",
+        "pubkey": "0xc0382eb1c39c77e1fe8423c9a7bf984c0df557ded2f7e15fc87f699ce9cf2791",
+        "reward_to": "0x12639cade6d2fdfaa79e536fcfdf79e56b537097",
+        "voting_power": 1,
+        "introduction": "DAOportValidatorD",
+        "is_retiring": false,
+        "miner_address": "0x3EE50317A3BF6EC5A7888C1D46AB3FD8F6C69DE7"
+    },
+    {
+        "address": "0x8ee070897a6d79fd0341a837bdcc9c8518816c8c",
+        "pubkey": "0xa061f0797673611de54c3b96335b5705b903ba35af9e24c5d9443cf0db1ccb05",
+        "reward_to": "0x12639cade6d2fdfaa79e536fcfdf79e56b537097",
+        "voting_power": 1,
+        "introduction": "DAOportValidatorE",
+        "is_retiring": false,
+        "miner_address": "0x6F779C2403174BD95C3B5067E03773857691A3D2"
+    },
+    {
+        "address": "0xba8cb32ce3c940bb70e69860520bec0d0b12e2d3",
+        "pubkey": "0x628771378efe76db542a55464093004b023a3e0d3aa09bd89f6b97ad592b8df4",
+        "reward_to": "0x12639cade6d2fdfaa79e536fcfdf79e56b537097",
+        "voting_power": 1,
+        "introduction": "DAOportValidatorF",
+        "is_retiring": false,
+        "miner_address": "0x160F1E0355F2A8BC7860E5EA0672E491EB965A93"
+    },
+    {
+        "address": "0x1d419a8fd8f05a960064b91ee4336db1630c8b9c",
+        "pubkey": "0x3f6d60483d512af8ace70db6d10ddaf5aba6fced2ab7da0b9d64dcfd627986d4",
+        "reward_to": "0x12639cade6d2fdfaa79e536fcfdf79e56b537097",
+        "voting_power": 1,
+        "introduction": "DAOportValidatorG",
+        "is_retiring": false,
+        "miner_address": "0x18928D725C9E4D7B5B0B2B388610619F32CFFC5A"
+    },
+    {
+        "address": "0x963d791439cf1c5603a981233d9b6c1574b34ec8",
+        "pubkey": "0x6498a7abff40d6cd5669d1bab1a5b26aac9743eb44980993594d0edc44878186",
+        "reward_to": "0x12639cade6d2fdfaa79e536fcfdf79e56b537097",
+        "voting_power": 1,
+        "introduction": "DAOportValidatorH",
+        "is_retiring": false,
+        "miner_address": "0xCCC507E9C5050B2D22B1D4535402299D2CCADE88"
+    },
+    {
+        "address": "0xaaa007dc163ff82cb8e0ebcd6ab44ab17331a0e8",
+        "pubkey": "0x6a508e539b878d95a3b94c5572fb310aadabc374b4409313401582ecc62542d3",
+        "reward_to": "0xaaa007dc163ff82cb8e0ebcd6ab44ab17331a0e8",
+        "voting_power": 1,
+        "introduction": "CA",
+        "is_retiring": false,
+        "miner_address": "0x9ACC4E14BE3267FBEFECE4A2A87FFE88C237ED1D"
+    },
+    {
+        "address": "0x492c54e25e98f735b55604c7b11ded202432a830",
+        "pubkey": "0x9521aa3fd352ca12765a2d7d900b70c9141316606766965377ada60aa3bebd6a",
+        "reward_to": "0x492c54e25e98f735b55604c7b11ded202432a830",
+        "voting_power": 1,
+        "introduction": "DrCSW.bch",
+        "is_retiring": false,
+        "miner_address": "0x32E716DAA7C8C2A8AF5759BDB2DF28DF74BBF627"
+    },
+    {
+        "address": "0xf70d0b3af64f7ec01bbec6d7468cafecd08d5645",
+        "pubkey": "0x161d6591750c6d77dfa77dbdae1eb353c807a117352d19ec02523246f9b5a708",
+        "reward_to": "0xf70d0b3af64f7ec01bbec6d7468cafecd08d5645",
+        "voting_power": 1,
+        "introduction": "JW",
+        "is_retiring": false,
+        "miner_address": "0x214CF857DAC52298955768763CE0F8E92F0DCCC6"
+    },
+    {
+        "address": "0x85c2cc7c67d0ab77290d00a482537c7e773f1a11",
+        "pubkey": "0xfddd45f9969948979dd5821d4b47eede3f54ff0e7447ca346a1aa3094339c0d9",
+        "reward_to": "0x85c2cc7c67d0ab77290d00a482537c7e773f1a11",
+        "voting_power": 1,
+        "introduction": "MD",
+        "is_retiring": false,
+        "miner_address": "0xB112153ECBD1B026D7A87B3C6FD01598B5832E38"
+    }
+]
