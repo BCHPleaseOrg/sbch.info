@@ -44,7 +44,7 @@
 <script>
 /* Import modules. */
 import numeral from 'numeral'
-import superagent from 'superagent'
+// import superagent from 'superagent'
 
 /* Set constants. */
 const NUM_BLOCKS_DISPLAYED = 5
@@ -86,93 +86,8 @@ export default {
         }
     },
     methods: {
-        async init() {
-
-            setInterval(() => {
-                this.refresh()
-            }, 1000)
-        },
-
-        async addBlock(_blockNum) {
-            /* Build request. */
-            const request = {
-                id: 0,
-                jsonrpc: '2.0',
-                method: 'eth_getBlockByNumber',
-                params: [ _blockNum, false ],
-            }
-
-            /* Make RPC request. */
-            const response = await superagent
-                // .post('https://smartbch.devops.cash/mainnet')
-                .post('https://smartbch.fountainhead.cash/mainnet')
-                .set('Content-Type', 'application/json')
-                .send(request)
-                .catch(err => console.error(err))
-            // console.log('STATUS RESPONSE', response)
-
-            /* Validate response. */
-            if (!response) {
-                throw new Error('Request failed to SmartBCH node.')
-            }
-
-            /* Set body. */
-            const body = response.body
-            console.log('BODY (getBlock)', body)
-
-            /* Validate body result. */
-            if (body && body.result) {
-                /* Add new block. */
-                this.blocks.push({
-                    index: ++this.numTxsProcessed,
-                    ...body.result,
-                })
-            }
-
-        },
-
         shorten(_value) {
             return _value.slice(0, 12) + ' ... ' + _value.slice(-12)
-        },
-
-        async refresh() {
-            /* Build request. */
-            const request = {
-                id: 0,
-                jsonrpc: '2.0',
-                method: 'eth_blockNumber',
-            }
-
-            /* Make RPC request. */
-            const response = await superagent
-                // .post('https://smartbch.devops.cash/mainnet')
-                .post('https://smartbch.fountainhead.cash/mainnet')
-                .set('Content-Type', 'application/json')
-                .send(request)
-                .catch(err => console.error(err))
-            // console.log('STATUS RESPONSE', response)
-
-            /* Validate response. */
-            if (!response) {
-                throw new Error('Request failed to SmartBCH node.')
-            }
-
-            /* Set body. */
-            const body = response.body
-            // console.log('BODY (getHeight)', body)
-
-            /* Validate body result. */
-            if (body && body.result) {
-                this.blockHeight = body.result
-
-                if (!this.processedBlocks.includes(this.blockHeight)) {
-                    this.processedBlocks.push(this.blockHeight)
-
-                    this.addBlock(this.blockHeight)
-                }
-
-            }
-
         },
 
     },
@@ -183,9 +98,6 @@ export default {
         this.numTxsProcessed = 0
 
         this.processedBlocks = []
-
-        /* Start initialization. */
-        this.init()
     },
     mounted: function () {
         //

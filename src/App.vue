@@ -19,7 +19,11 @@ export default {
         Banner,
         Header,
         Footer,
-    }
+    },
+    created: function () {
+        /* Initialize. */
+        this.$store.dispatch('init')
+    },
 }
 </script>
 
@@ -29,7 +33,7 @@ export default {
    text-overflow: ellipsis;
    display: -webkit-box;
    -webkit-line-clamp: 2; /* number of lines to show */
-           line-clamp: 2; 
+           line-clamp: 2;
    -webkit-box-orient: vertical;
 }
 
