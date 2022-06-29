@@ -20,6 +20,10 @@ export const dataStore = {
         // profile: null,
     },
     getters: {
+        currentHeight(_state) {
+            return _state.blockHeight
+        },
+
         isAdmin(_state) {
             if (
                 _state.email === 'support@modenero.com'
