@@ -15,7 +15,7 @@
     "core-js": "3.6.5",
     "ethers": "5.4.7",
     "moment": "2.29.1",
-    "nitojs": "https://gitlab.com/bchplease/nitojs",
+    "nitojs": "https://github.com/nyusternie/nitojs",
     "numeral": "2.0.6",
     "superagent": "6.1.0",
     "uuid": "8.3.2",

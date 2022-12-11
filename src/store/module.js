@@ -1,5 +1,5 @@
 /* Import modules. */
-import numeral from 'numeral'
+// import numeral from 'numeral'
 import superagent from 'superagent'
 
 const processedBlocks = []
@@ -51,22 +51,16 @@ export const dataStore = {
          *
          * Will perform functions to setup the app.
          */
-        init({ state, dispatch }) {
+        init({ dispatch }) {
             /* Set (blockchain) interval. */
             setInterval(() => {
                 dispatch('refresh')
             }, 1000)
-
-            setInterval(async () => {
-                console.log('state.blockHeight', state.blockHeight);
-                console.log('state.processedBlocks', processedBlocks.length, processedBlocks);
-                console.log('state.blocks', state.blocks.length, state.blocks);
-            }, 10000)
         },
 
         async addBlock({ state, commit }, _blockNum) {
-            const blockNum = parseInt(_blockNum.slice(2), 16)
-            console.info(`Block [ # ${numeral(blockNum).format('0,0')} ] is in the queue`)
+            // const blockNum = parseInt(_blockNum.slice(2), 16)
+            // console.info(`Block [ # ${numeral(blockNum).format('0,0')} ] is in the queue`)
 
             /* Build request. */
             const request = {
@@ -164,8 +158,8 @@ export const dataStore = {
         saveBlock(_state, _block) {
             // console.log('SAVING BLOCK', _block)
 
-            const blockNum = parseInt(_block.number.slice(2), 16)
-            console.info(`Block [ # ${numeral(blockNum).format('0,0')} ] has been processed`)
+            // const blockNum = parseInt(_block.number.slice(2), 16)
+            // console.info(`Block [ # ${numeral(blockNum).format('0,0')} ] has been processed`)
 
             _state.blocks.push(_block)
         },
